@@ -1,0 +1,74 @@
+# ---- Secrets. This repository is public. Nothing below may ever be committed. ----
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.jks
+*.keystore
+secrets.*
+supabase-service-role*
+google-services.json
+firebase_options.dart
+*.google-services.json
+service-account*.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Flutter / Dart ----
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+*.g.dart
+*.freezed.dart
+ios/Pods/
+ios/.symlinks/
+*.ipa
+*.appbundle
+
+# ---- Kotlin / Android ----
+.gradle/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.hprof
+app/release/
+
+# ---- Rust (server/engine) ----
+target/
+Cargo.lock
+
+# ---- Node / tooling ----
+node_modules/
+dist/
+out/
+coverage/
+*.tsbuildinfo
+
+# ---- Editors and OS ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---- Local data that must never be uploaded ----
+*.sqlite
+*.db
+gpx/
+recordings/
