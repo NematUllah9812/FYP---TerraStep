@@ -35,7 +35,12 @@ will be rejected without review.
 A task is not Done until all six are true:
 
 1. **An acceptance criterion was written before the work started**, in the task Notes.
-2. **It went through a PR into `main`, approved by someone other than the author.**
+2. **It went through a PR into `main`.** The Supervisor reviews the diff against
+   `contracts/` in chat and recommends merge or changes; the human owner clicks
+   merge in the browser. Every contributor works through one GitHub account, so
+   GitHub cannot enforce cross-approval — the Supervisor's written review is the
+   gate, not an approval checkbox. Post the PR URL in the task Notes when it is
+   up so the owner can find it.
 3. **Automated tests exist and the full suite is green in CI on the PR.**
 4. **A human-checkable verification step is in the Notes** — exact commands or
    steps a non-engineer can run from a clean checkout, plus the result they should
